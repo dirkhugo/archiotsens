@@ -119,14 +119,14 @@ detection, surveillance of persons of interest, building a 3D picture
 of an environment, as, e.g., in-car sensing for driver sleepiness detection
 {{BFUseCases}}.
 
-Hardware based authentication that we address in this document builds
+The new IoT sensing based authentication that we address in this document builds
 on similar use cases.
 We can summarize the use cases we are currently considering here:
 Authenticating the device that is playing a melody, or a person has
 just touched; authenticating devices, i.e. smart teapot with certain
 manifests, like blinking red and blue; authenticate the device when a
 camera is pointed at it; and the like {{Henning}}.
-802.11bf sensing project provides proper framework for hardware based
+802.11bf sensing project provides proper framework for Wi-Fi signal characteristics based
 authentication because 802.11 or Wi-Fi devices are more and more
 diverse spanning from personal computers, smartphones, televisions,
 tablets, and all sorts of IoT devices or sensors.
@@ -141,8 +141,8 @@ between a transmitter and receiver can be detected and tracked. This
 way, using feature extraction and classification provided by means of artificial
 intelligence (AI), more higher level tasks like human activity
 recognition and object detection are available for authentication
-purposes, while hardware based authentication use cases can be
-achieved through computation of phase differences, etc.
+purposes, while radio sensing based authentication use cases can be
+achieved through computation of radio signal characteristics in terms of phase differences, etc.
 
 TGbf Wi-Fi Sensing (SENS) is achieved by signaling between just an
 initiator and a responder.
@@ -178,7 +178,7 @@ measurements at mmWave that provide highly-directional information
 through the usage of beamforming toward a given receiver, but have
 small range due to the presence of blockers (e.g., walls).
 
-# Hardware Based Authentication
+# New IoT Authentication Mechanism
 
 Aim of this document is to lay ground for the need for new
 authentication models in the framework of devices (e.g., machines in
@@ -193,7 +193,7 @@ PIN (Personal Identification Number).
 With the use case of massive IoT (mIoT) as foreseen, e.g., in 5G and
 with an increasing amount of devices within a household (smart home)
 and/or in the ownership of a customer (smart watch etc.)
-the need for an ease-of-use hardware-based admission model arises.
+the need for an ease-of-use new IoT authentication model-based admission model arises.
 
 Focusing on corresponding procedures starting with detection (sensing)
 of a new device and subsequent mutual authenticating of the device by
@@ -201,9 +201,10 @@ and to the network a set of potential technologies are identified and
 described to allow for analysis in terms of criteria as reliable
 operation (working), scalability, ease of use and convenience,
 security, and many more.
-Sensing is critical to Hardware Based Authentication because sensing 
+Sensing is critical to the new type of IoT authentication because sensing 
 (together with intelligent interpretation using possibly neural network models) will allow the detection of the device playing a melody, blinking red and blue,
- being pointed at, or somebody just touched and the like.
+ being pointed at, or somebody just touched and the like. Such sensors for audio, light, radio, or electro-static signal detections can provide a second communication 
+ channel for secure out-of-band (OOB) transmission of context information.
 Furthermore, the method should be applicable to future generations of
 network and of users, upcoming new applications and devices, assuming
 that todays established standard procedures do not fulfill the
